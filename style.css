@@ -1,0 +1,928 @@
+html {
+  overflow-y: scroll;
+}
+body{
+	color: #636D78;
+	text-align:justify;
+	margin:0px 0 0 100px;
+	background-color: black;
+	font-family: georgia;
+	box-sizing: border-box;
+	width: 85%;
+	background-image: url("hashia.jpg");
+	background-repeat: repeat-y;
+	background-position: right top;
+  background-size: 12% 30%;
+}
+/*container*/
+/*header*/
+
+.nav{
+  float: left;
+  width: 208px;
+  height: 217px;
+  position: absolute;
+  top: 0px;
+  right: 350px;
+  padding-top: 3%;
+  border-left: 1px solid #1A1D22;
+}
+.menubar{
+  line-height:47px;
+  width:200px;
+  font-size: 15px;
+}
+.menubar a{
+  color:#951E2B;
+  text-align:center;
+  display:block;
+  height:52px;
+  background-image:url("off2.jpg"); 
+  background-repeat:no-repeat;
+  text-decoration:none;
+}
+.menubar a:hover{
+  background-image:url(on2.jpg);
+  background-repeat:no-repeat;
+}
+.menubar img{
+  float: right;
+  margin: 5.5% 7% 0 0;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+.menubar:hover img{
+  visibility: visible;
+}
+.menubar .selected{
+  color: darkgrey;
+  background-image: url(on2.jpg);
+  font-weight: bold;
+  text-shadow: 1px 1px 4px black; 
+}
+
+#car{
+  width:380px;
+  height:260px;
+  float:left;
+  background-repeat:no-repeat;
+}
+.title1{
+  color: #ffffff;
+  font-size: 30px; 
+  font-weight: bold; 
+  padding: 5% 0px 0% 0%; 
+  margin-left: 30%;
+  box-sizing: border-box;
+}
+.title2{
+  color:#ffffff;
+  padding-top: 50px;
+  font-family: "Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
+  text-transform:uppercase;
+  font-size:20px;
+  line-height: 22px;
+  z-index: -1;
+  box-sizing: border-box;
+}
+.head{
+  position: sticky;
+  top: 0px;
+  width: 400px;
+  margin: 0px;
+  padding: 0;
+  z-index: 1;
+  clear: both;
+}
+.heading1{
+  background-color:#1A1D22;
+  height:40px;
+  clear:both;
+  color:#7F8A97;
+  font-family:arial;
+  text-transform:uppercase;
+  font-weight:bold;
+  padding:10px 0px 0px 15px;
+  width: 920px;
+  box-sizing:border-box;
+}
+
+.heading2{
+  background-color:#951E2B;
+  height:5px;
+  font-size:1px;
+  width: 920px;
+  margin-bottom: 40em;
+  box-sizing: border-box;
+}
+
+/*search bar*/
+.search form {
+  display: inline-block;
+  font-size: 0px;
+  margin: -55px 10px 0% 5.5%;
+  box-sizing: border-box;
+  padding: 3px 0px 2px 2px;
+  position: relative;
+  left: 610px;
+  top: -36px;
+}
+
+.search form input[type=text]:focus{
+  height: 38px;
+  -webkit-animation: search 800ms ease-out infinite alternate;
+  border: 1px solid #951E2B;
+}
+@-webkit-keyframes search{
+  0%{
+    border-color: #951E2B;
+    box-shadow: 0 0 5px rgba(153, 0, 0,.2), inset 0 0 5px rgba(153, 0, 0,.1), 0 2px 0 #000;
+  }
+  100%{
+    border-color: darkred;
+    box-shadow: 0 0 30px rgba(153, 0, 0,.9), inset 0 0 10px rgba(153, 0, 0,.6), 0 2px 0 #000;    
+  }
+}
+.search form input[type=text]{
+  height: 38px;
+  width: 200px;
+  padding:4% 0px 9px 8px;
+  box-sizing: border-box;
+  color:#7F8A97;
+  background-color: black;
+  border-color: black;
+  border-radius: 0px 0px 5px 5px;
+  border-right: 2px solid black;
+}
+.search form ::-webkit-placeholder:focus{
+  color: white;
+}
+.search form ::-webkit-input-placeholder{
+  color: #ffb3b3;
+}
+button{
+  width: 80px;
+  height: 38px;
+  margin:0;
+  padding:0;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #1A1D22;
+  background: linear-gradient(black, #222);
+  color:#ffb3b3;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-left-color: #330000;
+  border-left-width: 2px;
+  cursor: pointer;
+  text-shadow: 0 -1px 0 #000;
+  position: relative;
+  right: 4%;
+  bottom: 3%;
+  outline: none;
+  box-sizing: border-box;
+}
+.search button:focus, .search button:hover{
+  background-color: black;
+  background: linear-gradient(#393939, black);
+  color: #ff4d4d;
+  outline: none;
+}
+.seach button:active{
+  background-color: black;
+  background: linear-gradient(#393939, black);
+  box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+  top: 1px;
+}
+/*sidebar*/
+.side{
+  position: sticky;
+  top: 6%;
+}
+#left{
+  background-color: #951E2B;
+  height:35px;
+  width: 205px;
+  float:right;
+  margin-right: 3%;
+  font-weight: bold;
+  padding-top: 4px;
+  text-align: center;
+  border-bottom-right-radius: 12%;
+  border-bottom-left-radius: 12%;
+  box-sizing: border-box;
+  margin-bottom: 1%;
+  display: block;
+}
+
+.next{
+  width: 140px;
+  float: right;
+  padding: 20px 0 0 30px;
+  margin-right: -13%;
+  margin-top: 3%;
+  box-sizing: border-box;
+}
+.next a{
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 1px solid #2c313a;
+  color: darkgrey;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+#active:hover{
+  width: 50px;
+  color: #951E2B;
+}
+#active{
+  display: block;
+}
+/*main*/
+h1{
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+i{
+  color: #7F8A97;
+}
+.main{
+  font-size: 16px;
+  text-indent: 10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  margin-top: -220px;
+  box-sizing: border-box;
+  width: 670px;
+}
+.heading4{
+  border-bottom: 1px solid darkred;
+}
+/*ford and lexussection*/
+#fordlogo{
+  float: left;
+  margin-top: -2%;
+  box-sizing: border-box;
+}
+#p, #d{
+	width: 850px;
+}
+.founder img{
+  width: 190px;
+  height: 200px;
+  clear: left;
+  margin-top: 2em;
+  border-radius: 50%;
+  margin-left: -2%;
+  box-shadow: 1px 2px 4px #FFDEAD;
+  box-sizing: border-box;
+}
+.founder p{
+  margin-left: 4%;
+  padding-bottom: 2em;
+  float: right;
+  margin-top: -159px;
+  width: 460px;
+  box-sizing: border-box;
+}
+#lexcuspara{
+  margin-top:-25%;
+  margin-left:4%;
+  box-sizing: border-box;
+}
+#tom{
+  color: #951E2B;
+  margin-top: -50px;
+  box-sizing: border-box;
+  font-weight: bold;
+  position: absolute;
+  top:80%;
+  left:20%;
+}
+#eiji{
+  margin-top:91%;
+  margin-left:0%;
+  box-sizing: border-box;
+  color: #951E2B;
+  font-weight: bold;
+  position: absolute;
+  top: 3%;
+  left:20%;
+}
+.for{
+	width:160%;
+	margin-left: 18%;
+  box-sizing: border-box;
+	float: left;
+}
+.for img{
+	margin-bottom: 5em;
+  box-sizing: border-box;
+}
+
+/*hyundaisection*/
+.hyundaipart p{
+  width: 670px;
+}
+#chung{
+  color: #951E2B;
+  font-weight: bold;
+  position: absolute;
+  top: 280%;
+  left:20%;
+}
+.founder1 img{
+  width: 190px;
+  height: 200px;
+  float: left;
+  margin-top: 2em;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px #ffd480;
+ }
+.founder1 p{
+  margin: -23% 0 0 33%;
+  padding-bottom: 2em;
+  box-sizing: border-box;
+  float: left;
+  width: 460px;
+}
+/*toyotasection*/
+.toyotapart p{
+  width: 690px;
+}
+.founder2 img{
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-top: 2em;
+  border-radius: 50%;
+  box-shadow: 1px 2px 4px darkred;
+  box-sizing: border-box;
+}
+.founder2 p{
+  margin: -24% 0 0 33%;
+  padding-bottom: 2em;
+  float: left;
+  width: 470px;
+  box-sizing: border-box;
+}
+#Kiichiro{
+  color: #951E2B;
+  font-weight: bold;
+  position: absolute;
+  top: 385%;
+  left:22%;
+}
+/*hondasection*/
+.hondapart p{
+  width: 690px;
+}
+.founder3 img{
+  width: 190px;
+  height: 200px;
+  clear: left;
+  margin-top: 2em;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 1px 2px 4px white;
+}
+.founder3 p{
+  margin: -25% 0 0 33%;
+  padding-bottom: 2em;
+  width: 470px;
+  box-sizing: border-box;
+  z-index: -2;
+}
+#soichiro{
+  color: #951E2B;
+  font-weight: bold;
+  position: absolute;
+  top: 492%;
+  left:22%;
+}
+#hyundaifounder{
+  margin-top: -12%;
+  box-sizing: border-box;
+}
+#parafounder{
+  margin-top: -4%;
+  box-sizing: border-box;;
+}
+.heading4{
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  width: 129%; 
+  clear: both;
+}
+/*gallery of cars*/
+.gallery{
+  width: 100%;
+  margin-top: 15%;
+  margin-left: 5%;
+  box-sizing: border-box;
+}
+div.img{
+  margin: 5px 2% 8% 0px;
+  box-sizing: border-box;
+  z-index: -1;
+  border: 1px solid;
+  float: left;
+  width: 180px;
+  opacity: 0.4;
+  filter: alpha(opacity=30);
+  box-shadow: 0px -5px 3px silver, 0px 0px 0px black,  -4px 5px 3px silver, 0px 0px 0px black;
+  
+}
+div.img:hover{
+  border: 1px solid silver;
+  opacity: 1.0;
+  filter: alpha(opacity=90);
+}
+div.img img{
+  width: 100%;
+  height: auto;
+}
+div.para{
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+div.img2{
+  margin: 5px 2% 8% 0px;
+  box-sizing: border-box;
+  border: 1px solid;
+  float: left;
+  width: 180px;
+  opacity: 0.4;
+  filter: alpha(opacity=30);
+  box-shadow: 0px -5px 3px blue, 0px 0px 0px black, 0px 5px 3px blue, 0px 0px 0px black;
+}
+div.img2:hover{
+  border: 1px solid blue;
+  opacity: 1.0;
+  filter: alpha(opacity=90);
+}
+div.img2 img{
+  width: 100%;
+  height: auto;
+}
+div.para{
+  padding: 7px;
+  box-sizing: border-box;
+  text-align: center;
+}
+div.img3{
+  margin: 5px 2% 8% 0px;
+  box-sizing: border-box;
+  border: 1px solid;
+  float: left;
+  width: 180px;
+  opacity: 0.4;
+  filter: alpha(opacity=30);
+  box-shadow:0px 0px 0px, 0px 0px 0px,  0px 5px 3px darkred,  0px -5px 3px darkred;
+}
+div.img3:hover{
+  border: 1px solid darkred;
+  opacity: 1.0;
+  filter: alpha(opacity=90);
+}
+div.img3 img{
+  width: 100%;
+  height: auto;
+}
+div.para{
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+div.img4{
+  margin: 5px 2% 8% 0px;
+  box-sizing: border-box;
+  border: 1px solid;
+  float: left;
+  width: 180px;
+  height: 192px;
+  opacity: 0.4;
+  filter: alpha(opacity=30);
+  box-shadow: 0px -5px 3px yellow, 0px 0px 0px black, 4px 5px 3px yellow, 0px 0px 0px black;
+}
+div.img4:hover{
+  border: 1px solid yellow;
+  opacity: 1.0;
+  filter: alpha(opacity=90);
+}
+
+div.img4 img{
+  width: 100%;
+  height: auto;
+}
+div.para{
+  padding: 7px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#next{
+	float: right;
+	margin: 1% 30% -20% 0px;
+  box-sizing: border-box;
+	color: #951E2B;
+}
+#Previous { 
+	margin-left:5%;
+  box-sizing: border-box;
+	color: #951E2B;
+}
+#nexpre{
+	border:1px solid darkgray;
+	width: 75%;
+	margin: 25% 0 0 0;
+  box-sizing: border-box;
+}
+
+/*footer*/
+.button{
+  margin-left: 12px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.picture{
+  line-height: 180%;
+  margin-left: 40px;
+  margin-top: 5%;
+  box-sizing: border-box;
+  
+}
+form{
+  margin-top: 35px;
+  padding-left: 49%;
+  box-sizing: border-box;
+}
+.h4{
+  line-height: 70%;
+  margin-left: 60px;
+  margin-top: -38%;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS";
+}
+.leftCol{
+  width:62.8%;
+  background-color:#1A1D22;
+  height:260px;
+  float:left;
+  margin-left: -12%;
+  box-sizing: border-box;
+}
+.rightCol{
+  margin-top: 34px; 
+  margin-left: 19px;
+  box-sizing: border-box;
+  border-left: 1px solid darkgray;
+  width:30%;
+  background-color:#1A1D22;
+  height:220px;
+  float:left;
+}
+.middleRow{
+  box-sizing: border-box;
+  background-color:#1A1D22;
+  height: 310px;
+  clear:both;
+  margin-left: -18%;
+  margin-top: 2%;
+  width: 1540px;
+}
+input[type=button]:focus{
+  outline: none;
+}
+input[type=button]:hover{
+  -webkit-filter: drop-shadow(1px 1px 5px black);
+}
+input[type=button]{
+  background-color: darkred;
+  border-color: darkred;
+  cursor: pointer;
+  width: 27%;
+  height: 25px;
+}
+.row{
+  clear: both;
+}
+input[type=text], textarea{
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 3px 10px;
+  background-color: darkgray;
+  border-color: darkgray;
+  outline: none;
+  width: 90%;
+  height: 15%;
+}
+
+/*bottomlink*/
+.foot{
+  width:1px;
+  float:left;
+  color:#778492;
+  text-align:center;
+  margin-top: 5%;
+}
+.bottom{
+  box-sizing: border-box;
+  margin:-5% 0 0 10%;
+  float: left;
+  width: 900px;
+}
+.bottomlink{
+  margin: 4% 5% 0% 5%;
+  padding-bottom: 2em;
+  box-sizing: border-box;
+  text-align:center;
+  float: left;
+  text-decoration: underline;
+}
+.rig{
+  color: black;
+  background-color: black;
+  float: right;
+  width: 20%;
+  margin-top: -5.1%;
+  padding: 4% 0 4% 0;
+  margin-right: -31%;
+  box-sizing: border-box;
+}
+.bottomlink:hover{
+  text-decoration: none;
+}
+#link{
+  font-size: 17px;
+  text-align: center;
+  margin: -4% 0 0 26%;
+  padding: 2% 36% 1em 0;
+  box-sizing: border-box;
+  float: left;
+  background-color: black;
+  width: 83%;
+}
+#link a{
+  color:#C2C8D0;
+  font-weight:bold;
+}
+#link a:hover{
+  color:#ffffff;
+}
+
+::selection{
+  color: darkred;  
+}
+::-webkit-input-placeholder{
+  color: white;
+  font-family: sans-serif;
+}
+
+/*responsive in mobile devices*/
+@media screen and (max-width: 720px){
+	body{
+		margin: 0;
+		padding:0;
+		background-image: none;
+	}
+  .container{
+    margin: 0;
+    padding: 0;
+  }
+	.nav{
+		display: none;
+	}
+	#car{
+		width: 170px; 
+		height: 150px;
+	}
+	.title1{
+		font-size: 20px;
+		font-weight: 400;
+		box-sizing: border-box;
+		padding: 15% 0% 0 6%;
+		text-align: center;
+	}
+	.title2{
+		display: none;
+	}
+	.head{
+		width: 370px;
+    position: sticky;
+    top: -4px;
+	}
+	.heading1{
+		width: 375px;
+		font-size: 12px;
+		box-sizing: border-box;
+		margin-top: -30%;
+		height: 30px;
+	}
+	.heading2{
+		width: 375px;
+	}
+  .search form{
+    display: none;
+  }
+	.side{
+		width: 370px;
+		float: left;
+    position: static;
+	}
+	#left{
+		font-size: 15px;
+		width: 340px;
+    margin-right: 4%;
+		padding: 0;
+		height: 33px;
+    margin-top: -11%;
+  box-sizing: border-box;
+	}
+	.next{
+		width: 370px;
+		text-align: center;
+		padding: 0;
+    margin:0;
+	}
+	.next a{
+		width: 300px;
+		padding: 2px;
+    box-sizing: border-box;
+		margin: auto;
+	}
+  .main{
+    width: 350px;
+  }
+  .fordpart{
+    width: 300px;
+    box-sizing: border-box;
+    margin-top: 70%;
+  }
+  #fordlogo{
+    width: 50px;
+    height: auto;
+  }
+  h1{
+    font-size: 18px;
+  }
+  #p{
+    width: 355px;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 0 1% 4% 2%;
+  }
+  #tom{
+    box-sizing: border-box;
+    font-size: 10px;
+    margin-top: -13%;
+  }
+  #d{
+    display: none;
+  }
+  .founder img, .founder1 img, .founder2 img, .founder3 img{
+    width: 100px;
+    height: 90px;
+  }
+  #para{
+    display: none;
+  }
+  .founder p{
+    width: 250px;
+    box-sizing: border-box;
+    margin: 20% -22% 5em 0;
+    padding: 0 2% 0 0;
+    font-size: 12px;
+  }
+  .for{
+    width: 300px;
+    margin-bottom: 3em;
+    box-sizing: border-box;
+  }
+  .for img{
+    width: 100px;
+    height: 90px;
+    margin: 0 0 0 -6%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .heading4{
+    width: 350px;
+    margin-left: 4%;
+  }
+  #parafounder{
+    display: none;
+  }
+  #toyodafounder{
+    display: none;
+  }
+  #hyundaifounder{
+    display: none;
+  }
+  #lexcuspara{
+    width: 280px;
+    box-sizing: border-box;
+    margin: -23% -3% 4em 0%;
+    float: right;
+    padding:0 0% 0 12%;
+  }
+  #eiji{
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 238% 0 0 7%; 
+  }
+  .hyundaipart{
+    width: 300px;
+  }
+  #chung{
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: -138% 4% 0 0;
+  }
+  .founder1 p{
+    width: 250px;
+    font-size: 12px;
+    margin: -30% 0 2em 37%;
+    box-sizing: border-box;
+  }
+  .founder1 .for img, .founder2 .for img{
+    margin-left: 0%;
+  }
+  .founder2 p{
+    font-size: 12px;
+    width: 250px;
+    padding-top: 4%;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+  }
+  #Kiichiro{
+    font-size: 10px;
+    margin: -200% 0 0 7%;
+    box-sizing: border-box;
+  }
+  .founder3 p{
+    font-size: 12px;
+    width: 250px;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+    padding-top: 8%;
+  }
+  #soichiro{
+    font-size: 10px;
+    margin: -285% 0 0 7%;
+    box-sizing: border-box;
+  }
+  .founder3 .for img{
+    margin-right: 12px;
+    box-sizing: border-box;
+  }
+  #nexpre{
+    display: none;
+  }
+  #next{
+    display: none;
+  }
+  #pervious{
+    display: none;
+  }
+  .gallery{
+    display: none;
+  }
+  .middleRow{
+    width: 430px;
+    height: 250px;
+  }
+  .leftCol{
+    height: 250px;
+  }
+  .rightCol{
+    display: none;
+  }
+  input[type=text], button {
+    width: 300px;
+    height: 30px;
+  }
+  textarea{
+    width: 300px;
+    height: 50px;
+  }
+  input[type=button]{
+    width: 100px;
+  }
+  .bottom{
+    display: none;
+  }
+  .rig{
+    display: none;
+  }
+  #link{
+    display: block;
+    font-size: 12px;
+    width: 370px;
+    float: left;
+    margin:0;
+    padding: 0 0 3% 5%;
+    box-sizing: border-box;
+  }
+}

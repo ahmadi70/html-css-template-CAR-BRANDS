@@ -1,0 +1,28 @@
+html {
+  overflow-y: scroll;
+}
+body{
+	color: #636D78;
+	text-align:justify;
+	margin:0px 0 0 100px;
+	background-color: black;
+	font-family: georgia;
+	box-sizing: border-box;
+	width: 85%;
+	background-image: url("hashia.jpg");
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+/*main*/
+main{
+	margin-top: 5em;
+	box-sizing: border-box;
+}
+.top{
+	margin-top: 10em;
+	box-sizing: border-box;
+}
+.part2{
+	box-sizing: border-box;
+	margin: 0% 0 0 11%;
+}
